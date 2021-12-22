@@ -49,27 +49,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <script>
-  var str = "Hi!, I'm Arpita Pandey.",
-    i = 0,
-    isTag,
-    text;
-
-(function type() {
-    text = str.slice(0, ++i);
-    if (text === str) return;
-
-    document.getElementById('ap123').innerHTML = text;
-
-    var char = text.slice(-1);
-    if( char === '<' ) isTag = true;
-    if( char === '>' ) isTag = false;
-
-    if (isTag) return type();
-    setTimeout(type, 80);
-}());
-    </script>
-
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
 
@@ -118,12 +98,32 @@
     <!--/ #topbar-inner -->
   </div>
   <!--/ #section-topbar -->
+  <script>
+    var str = "<h1>This is my <span style='color:red;'>special string</span> with an <img src='http://placehold.it/150x150'> image !</h1>",
+    i = 0,
+    isTag,
+    text;
+
+(function type() {
+    text = str.slice(0, ++i);
+    if (text === str) return;
+    
+    document.getElementById('typewriter').innerHTML = text;
+
+    var char = text.slice(-1);
+    if( char === '<' ) isTag = true;
+    if( char === '>' ) isTag = false;
+
+    if (isTag) return type();
+    setTimeout(type, 80);
+}());
+    </script>
 
   <div id="headerwrap">
     <div class="container">
       <div class="row centered">
         <div class="col-lg-12">
-          <h1 id="ap123"></h1>
+          <div id="ap123"></div>
           <h3>Passionate Student | arpita.pandey@outlook.com</h3>
         </div>
         <!--/.col-lg-12 -->
