@@ -50,18 +50,25 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <script>
-  var i = 0;
-  var txt = "Hi, I'm Arpita Pandey";
-  var speed = 50;
+  var str = "Hi!, I'm Arpita Pandey.",
+    i = 0,
+    isTag,
+    text;
 
-  function typeWriter() {
-    if (i < txt.length) {
-      document.getElementById("ap123").innerHTML += txt.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
-    }
-  }
-</script>
+(function type() {
+    text = str.slice(0, ++i);
+    if (text === str) return;
+
+    document.getElementById('ap123').innerHTML = text;
+
+    var char = text.slice(-1);
+    if( char === '<' ) isTag = true;
+    if( char === '>' ) isTag = false;
+
+    if (isTag) return type();
+    setTimeout(type, 80);
+}());
+    </script>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
