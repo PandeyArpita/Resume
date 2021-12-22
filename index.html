@@ -49,6 +49,19 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <script>
+  var i = 0;
+  var txt = "Hi, I'm Arpita Pandey";
+  var speed = 50;
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("ap123").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+</script>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
@@ -103,7 +116,7 @@
     <div class="container">
       <div class="row centered">
         <div class="col-lg-12">
-          <h1>Arpita Pandey</h1>
+          <h1 id="ap123"></h1>
           <h3>Passionate Student | arpita.pandey@outlook.com</h3>
         </div>
         <!--/.col-lg-12 -->
