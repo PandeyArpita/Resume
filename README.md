@@ -8,9 +8,13 @@ This template includes:
 4. Projects
 5. Contact 
 6. Link To PDF resume
+
 The link to the website is https://bit.ly/arpitapandey
+
 Link to PDF resume is https://bit.ly/arpitapdfresume
+
 Link to LinkedIn is https://bit.ly/arpitalinkedin
+
 Thanks!
 
-Arpita
+Arpita Pandey
