@@ -99,7 +99,7 @@
   </div>
   <!--/ #section-topbar -->
   <script>
-    var str = "<h1>This is my <span style='color:red;'>special string</span> with an <img src='http://placehold.it/150x150'> image !</h1>",
+var str = "<p>This is my <span style='color:red;'>special string</span> with an <img src='http://placehold.it/150x150'> image !</p>",
     i = 0,
     isTag,
     text;
@@ -108,7 +108,7 @@
     text = str.slice(0, ++i);
     if (text === str) return;
     
-    document.getElementById("ap123").innerHTML = text;
+    document.getElementById('ap123').innerHTML = text;
 
     var char = text.slice(-1);
     if( char === '<' ) isTag = true;
