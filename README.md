@@ -9,11 +9,19 @@ This template includes:
 5. Contact 
 6. Link To PDF resume
 
+**Links**
+
 The link to the website is https://bit.ly/arpitapandey
 
 Link to PDF resume is https://bit.ly/arpitapdfresume
 
 Link to LinkedIn is https://bit.ly/arpitalinkedin
+
+Cloudflare Hosting: https://arpitapandey.pages.dev
+
+Netlify Hosting: https://arpitapandey.netlify.app
+
+Github Pages Hosting: https://pandeyarpita.github.io/Resume
 
 Thanks!
 
